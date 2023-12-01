@@ -1,22 +1,23 @@
 {
+  "404": [
+    "cog-internal-feature-static-file-generation-404__en__cfcd208495d565ef66e7dff9f98764da.json"
+  ],
   "city": [
-    "directory-city__en__964b544d7823fc0633a060fd904176d0.json",
-    "directory-city__en__82782b2605ed8fe8ba33d83a14680e56.json"
+    "directory-city__en__dbe0a3769803e86e7feedbdad090e4f4.json",
+    "directory-city__en__12a62edde1b55c75f8e1eee47bfa9c37.json"
   ],
   "entity": [
-    "locations__en__65706fda938b7baf4da9842dc9174581.json",
-    "locations__en__bedacbff42a767c32534cfe5a2c697e2.json",
-    "locations__en__e7879db810774abc8cd1000f29e868f7.json",
-    "locations__en__c4f729fae841e9c79ff7a1deb820586e.json",
-    "locations__en__868165b4e022d87e061bcc0426f620b5.json"
+    "locations__en__39c479aab8f1796af2cabab04c906914.json",
+    "locations__en__52d93d08c9a2a7bd91d167dc0fd5a840.json",
+    "locations__en__a982cbcbf1bf062d4290a485b37c5f96.json"
   ],
   "region": [
-    "directory-region__en__a467079276adfd1e162839fb16569e38.json",
-    "directory-region__en__1210576f6b59e22e89e12a77f7a798a6.json"
+    "directory-region__en__98c3a7b11d6dde717bbe5d156a701016.json",
+    "directory-region__en__4bbeebb0a530704c5302063b2f5b3117.json"
   ],
   "robots": [
     "cog-internal-feature-static-file-generation-robots__en__cfcd208495d565ef66e7dff9f98764da.json"
   ],
-  "root": ["directory-root__en__a9692a4fddb39679e182eede5b5da11b.json"],
-  "search": ["search-page__en__d2148443c57696a3a7b3206170755172.json"]
+  "root": ["directory-root__en__29260f3542a0a32618cc5f4c1bc762a7.json"],
+  "search": ["search-page__en__fd44114cb9e1afe27e969fffeabed0e1.json"]
 }

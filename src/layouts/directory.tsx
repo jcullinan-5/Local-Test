@@ -34,34 +34,36 @@ const DirectoryLayout = ({ data }: DirectoryLayoutProps) => {
 
   return (
     <>
-      <ErrorBoundaryWithAnalytics name="directory_hero">
-        <DirectoryHero title={name} brand={_site.c_brand} />
-      </ErrorBoundaryWithAnalytics>
-      <ErrorBoundaryWithAnalytics name="breadcrumbs">
-        <Breadcrumbs
-          breadcrumbs={dm_directoryParents || []}
-          separator="/"
-          className="container flex justify-center"
-          addAnalytics={true}
-        />
-      </ErrorBoundaryWithAnalytics>
-      {dm_directoryChildren && !isDirectoryGrid(dm_directoryChildren) && (
-        <ErrorBoundaryWithAnalytics name="directory">
-          <DirectoryList
-            showNumLocs={true}
-            directoryChildren={dm_directoryChildren}
-            relativePrefixToRoot={data.relativePrefixToRoot}
+      <main>
+        <ErrorBoundaryWithAnalytics name="directory_hero">
+          <DirectoryHero title={name} brand={_site.c_brand} />
+        </ErrorBoundaryWithAnalytics>
+        <ErrorBoundaryWithAnalytics name="breadcrumbs">
+          <Breadcrumbs
+            breadcrumbs={dm_directoryParents || []}
+            separator=">"
+            className=" flex justify-left"
+            addAnalytics={true}
           />
         </ErrorBoundaryWithAnalytics>
-      )}
-      {dm_directoryChildren && isDirectoryGrid(dm_directoryChildren) && (
-        <ErrorBoundaryWithAnalytics name="directory">
-          <DirectoryGrid
-            CardComponent={DirectoryCard}
-            directoryChildren={dm_directoryChildren}
-          />
-        </ErrorBoundaryWithAnalytics>
-      )}
+        {dm_directoryChildren && !isDirectoryGrid(dm_directoryChildren) && (
+          <ErrorBoundaryWithAnalytics name="directory">
+            <DirectoryList
+              showNumLocs={true}
+              directoryChildren={dm_directoryChildren}
+              relativePrefixToRoot={data.relativePrefixToRoot}
+            />
+          </ErrorBoundaryWithAnalytics>
+        )}
+        {dm_directoryChildren && isDirectoryGrid(dm_directoryChildren) && (
+          <ErrorBoundaryWithAnalytics name="directory">
+            <DirectoryGrid
+              CardComponent={DirectoryCard}
+              directoryChildren={dm_directoryChildren}
+            />
+          </ErrorBoundaryWithAnalytics>
+        )}
+      </main>
     </>
   );
 };

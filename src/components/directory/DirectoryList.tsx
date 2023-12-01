@@ -10,7 +10,7 @@ interface DirectoryListProps {
 const DirectoryList = (props: DirectoryListProps) => {
   const { showNumLocs, directoryChildren, relativePrefixToRoot } = props;
   return (
-    <div className="container my-8">
+    <div className=" my-8">
       <ul className="lg:columns-4 md:columns-3 sm:columns-2 columns-1 -m-3">
         {directoryChildren.map((child, idx) => (
           <li className="p-3" key={idx}>
@@ -21,7 +21,7 @@ const DirectoryList = (props: DirectoryListProps) => {
                 showNumLocs ? "(" + child.dm_baseEntityCount + ")" : ""
               }
             >
-              <span className="text-brand-primary hover:underline">
+              <span className="directory--list hover:underline">
                 {child.name}
               </span>
             </Link>

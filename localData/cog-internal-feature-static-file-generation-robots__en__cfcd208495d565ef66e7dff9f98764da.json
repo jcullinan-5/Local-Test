@@ -1,11 +1,9 @@
 {
   "__": {
-    "name": "robots",
-    "staticPage": {},
-    "templateType": "JS"
+    "name": "robots"
   },
   "_site": {
-    "c_brand": "Yext Consulting",
+    "c_brand": "Pirmianti Bros.",
     "c_copyrightMessage": "© 2022. All Rights Reserved.",
     "c_facebook": "https://www.facebook.com/",
     "c_footerLinks": [
@@ -65,15 +63,14 @@
       ],
       "logo": {
         "height": 100,
-        "url": "http://a.mktgcdn.com/p/BzSALSNKyVBFz797EoaKt_k3rgAJonv9DnbGYMbxqds/100x100.png",
+        "url": "http://a.mktgcdn.com/p-sandbox/hoFxFk7QZTsh10XJezwLl_mU98YpK9h9-5lF0O7W7f4/100x100.png",
         "width": 100
       }
     },
     "c_instagram": "https://www.instagram.com/",
     "c_linkedIn": "https://www.linkedin.com/",
-    "c_nearbySectionAPIKey": "a76f3747d89260bdebb2c3223cffe03e",
-    "c_reviewsAPIKey": "950cb865b1378ec95ad87c7b2a54a806",
-    "c_searchExperienceAPIKey": "134988aadced7171cc410730c3aec4f6",
+    "c_nearbySectionAPIKey": "b615bb36e8fe622a91ede445c1f369e1",
+    "c_reviewsAPIKey": "06998c4cda3064f7753e5096b92527b6",
     "c_searchPage": [
       {
         "slug": "search"
@@ -85,14 +82,14 @@
     "meta": {
       "entityType": {
         "id": "ce_site",
-        "uid": 132489
+        "uid": 135212
       },
       "locale": "en"
     },
     "name": "Site Entity",
-    "uid": 64216926
+    "uid": 62343943
   },
-  "businessId": 3861963,
+  "businessId": 3256455,
   "key": "0:robots:knowledgeGraph:0:en",
   "locale": "en",
   "meta": {

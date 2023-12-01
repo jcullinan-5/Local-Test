@@ -1,0 +1,13 @@
+.about,
+.menu {
+  padding: 30px;
+}
+
+.about p {
+  max-width: 540px;
+}
+
+p {
+  padding: 1em;
+  clear: both;
+}

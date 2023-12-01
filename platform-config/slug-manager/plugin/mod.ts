@@ -12,4 +12,5 @@ export const { webhook, connector } = createSlugManager({
   },
   fields: [],
   entityTypes: ["location"],
+  env: "sandbox",
 });

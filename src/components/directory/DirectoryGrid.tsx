@@ -10,7 +10,7 @@ interface DirectoryGridProps {
 const DirectoryGrid = (props: DirectoryGridProps) => {
   const { directoryChildren, CardComponent = DirectoryCard } = props;
   return (
-    <div className="container my-8">
+    <div className=" my-8">
       <ul className="flex flex-wrap -m-4">
         {directoryChildren.map((child, idx) => (
           <li className="p-4 w-full md:w-1/2 lg:w-1/3" key={idx}>

@@ -259,15 +259,15 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
 
   return (
     <>
-      {showBanner && (
+      {/* {showBanner && (
         <ErrorBoundaryWithAnalytics name="banner">
           <Banner text={banner.text} image={banner.image} />
         </ErrorBoundaryWithAnalytics>
-      )}
+      )} */}
       <ErrorBoundaryWithAnalytics name="breadcrumbs">
         <Breadcrumbs
           breadcrumbs={directoryParents || []}
-          separator="/"
+          separator=">"
           className="container"
           addAnalytics={true}
         />
@@ -282,33 +282,17 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           hours={hours}
           numReviews={21}
           rating={4.5}
+          profile={data.document}
         />
       </ErrorBoundaryWithAnalytics>
-      <ErrorBoundaryWithAnalytics name="core">
+      {/* <ErrorBoundaryWithAnalytics name="core">
         <Core profile={data.document} />
-      </ErrorBoundaryWithAnalytics>
-      {showPromo && (
-        <ErrorBoundaryWithAnalytics name="promo">
-          <Promo
-            title={promo.title}
-            description={promo.description}
-            image={promo.image}
-            cta={promo.cta}
-            googlePlayUrl={promo.googlePlayUrl}
-            appStoreUrl={promo.appStoreUrl}
-          />
-        </ErrorBoundaryWithAnalytics>
-      )}
-      {showProducts && (
+      </ErrorBoundaryWithAnalytics> */}
+      {/* {showProducts && (
         <ErrorBoundaryWithAnalytics name="products">
           <Products title={products.title} items={products.products} />
         </ErrorBoundaryWithAnalytics>
-      )}
-      {showEvents && (
-        <ErrorBoundaryWithAnalytics name="events">
-          <Events title={events.title} items={events.events} />
-        </ErrorBoundaryWithAnalytics>
-      )}
+      )}*/}
       {showAbout && (
         <ErrorBoundaryWithAnalytics name="about">
           <About
@@ -316,15 +300,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
             image={about.image}
             description={about.description || description}
             cta={about.cta}
-          />
-        </ErrorBoundaryWithAnalytics>
-      )}
-      {showInsights && (
-        <ErrorBoundaryWithAnalytics name="insights">
-          <Insights
-            title={insights.title}
-            cta={insights.cta}
-            insights={insights.insights}
+            profile={data.document}
           />
         </ErrorBoundaryWithAnalytics>
       )}
@@ -336,22 +312,13 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           />
         </ErrorBoundaryWithAnalytics>
       )}
-      {showTeam && (
-        <ErrorBoundaryWithAnalytics name="team">
-          <Team title={team.title} team={team.team} initialSize={3} />
-        </ErrorBoundaryWithAnalytics>
-      )}
-      {showFAQ && (
-        <ErrorBoundaryWithAnalytics name="faqs">
-          <FAQs title={faq.title} faqs={faq.faqs} />
-        </ErrorBoundaryWithAnalytics>
-      )}
+
       <LazyLoadWrapper>
         <ErrorBoundaryWithAnalytics name="reviews">
           <Reviews title={reviews?.title} name={name} entityId={id} />
         </ErrorBoundaryWithAnalytics>
       </LazyLoadWrapper>
-      <LazyLoadWrapper>
+      {/* <LazyLoadWrapper>
         <ErrorBoundaryWithAnalytics name="nearby">
           <Nearby
             title={nearby?.title}
@@ -362,7 +329,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
             id={id}
           />
         </ErrorBoundaryWithAnalytics>
-      </LazyLoadWrapper>
+      </LazyLoadWrapper> */}
     </>
   );
 };

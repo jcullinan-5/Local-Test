@@ -14,15 +14,22 @@ const DirectoryHero = (props: DirectoryHeroProps) => {
     document?._site?.c_searchPage?.slug || FALLBACK_SEARCH_PATH;
 
   return (
-    <div className="DirectoryHero bg-brand-gray-100 py-8 md:py-20 px-4 md:px-0">
-      <h1 className="mb-6 text-center">
-        {brand && <div className="Heading Heading--sub mb-6">{brand}</div>}
-        <div className="Heading Heading--head">{title}</div>
+    <div className="pt-8 md:pt-20 pt-4 md:px-0">
+      <h1 className="mb-6">
+        {/* {brand && <div className="Heading Heading--sub mb-6">{brand}</div>} */}
+        <div className="Heading Heading--head">
+          {title && title !== "Select a State" && (
+            <span>Primanti Bros. Restaurant Locations in {title}</span>
+          )}
+          {title === "Select a State" && (
+            <span>Primanti Bros. Restaurant Locations</span>
+          )}
+        </div>
       </h1>
-      <DirectorySearchBar
+      {/* <DirectorySearchBar
         placeholder="Search by city and state or ZIP code"
         searcherPath={relativePrefixToRoot + search_path}
-      />
+      /> */}
     </div>
   );
 };

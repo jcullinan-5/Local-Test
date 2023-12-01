@@ -98,9 +98,6 @@ const Core = (props: CoreProps) => {
               {profile.hours && (
                 <HoursTable hours={profile.hours} startOfWeek="Monday" />
               )}
-              {profile.additionalHoursText && (
-                <div className="mt-4">{profile.additionalHoursText}</div>
-              )}
             </CoreSection>
           )}
           {profile.services && (

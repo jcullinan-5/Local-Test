@@ -2,7 +2,10 @@
 @import "src/styles/utils.css";
 @import "src/styles/fonts.css";
 @import "src/styles/theme.css";
-
+@import "src/components/common/header.css";
+@import "src/components/entity/hero.css";
+@import "src/components/entity/about.css";
+@import "src/components/common/breadcrumbs.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

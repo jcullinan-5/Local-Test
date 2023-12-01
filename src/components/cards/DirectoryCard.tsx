@@ -13,7 +13,7 @@ const DirectoryCard: CardComponent<
 
   return (
     <div className="Directorycard bg-white px-6 py-8 border h-full">
-      <h3 className="mb-4 text-lg font-medium">
+      <h3 className=" text-lg font-medium">
         <MaybeLink
           className="Link Link--primary hover:underline"
           href={profile.slug ? relativePrefixToRoot + profile.slug : ""}
@@ -22,15 +22,17 @@ const DirectoryCard: CardComponent<
         </MaybeLink>
       </h3>
 
+      {profile.address && (
+        <div className="text-sm">
+          {profile.address.line1} {profile.address.line2}
+          <br />
+          {profile.address.city}, {profile.address.region}{" "}
+          {profile.address.postalCode}
+        </div>
+      )}
       {profile.hours && (
         <div className="mb-4 text-sm">
           <HoursStatus hours={profile.hours} />
-        </div>
-      )}
-
-      {profile.address && (
-        <div className="text-sm">
-          <Address address={profile.address} lines={[["line1"]]} />
         </div>
       )}
     </div>

@@ -14,3 +14,25 @@ For example:
   font-display: swap;
 }
 */
+
+@font-face {
+  font-family: "Uniform";
+  src: url("/src/assets/fonts/Uniform.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+element.style {
+  left: -381px;
+}
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+}
+.relative {
+  position: relative;
+}
+.left-0 {
+  left: 0;
+}

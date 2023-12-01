@@ -24,14 +24,14 @@ interface BreadcrumbsPropsDefault {
  *          between each breadcrumb - defaults to '/', also accepts any HTML element (<svg>, <img>, etc)
  */
 const Breadcrumbs = (props: BreadcrumbsPropsDefault) => {
-  const { breadcrumbs, className, separator = "/" } = props;
+  const { breadcrumbs, className, separator = ">" } = props;
   const { relativePrefixToRoot } = useTemplateData();
 
   return (
     <>
       {breadcrumbs?.length && (
         <nav
-          className={classNames("Breadcrumbs my-4", className)}
+          className={classNames("Breadcrumbs", className)}
           aria-label="Breadcrumb"
         >
           <ol className="flex flex-wrap">
