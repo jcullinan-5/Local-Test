@@ -260,13 +260,12 @@ For example:
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
+  src: url("src/assets/Fonts/fontawesome-webfont.eot")
       format("embedded-opentype"),
-    url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
-    url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
-    url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
-    url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
+    url("src/assets/Fonts/fontawesome-webfont.woff2") format("woff2"),
+    url("src/assets/Fonts/fontawesome-webfont.woff") format("woff"),
+    url("src/assets/Fonts/fontawesome-webfont.ttf") format("truetype"),
+    url("src/assets/Fonts/fontawesome-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
