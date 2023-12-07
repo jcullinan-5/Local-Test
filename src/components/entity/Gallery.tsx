@@ -33,13 +33,14 @@ const Gallery = (props: GalleryProps) => {
   const showControls = !props.hideArrows || !props.hideNav;
 
   return (
-    <div className="Gallery bg-brand-gray-100 py-8 sm:py-16">
+    <div className="Gallery  py-8 sm:py-16">
+      <hr className="border-t-2 border-black my-4" />
       <div className="container">
-        {props.title && (
+        {/* {props.title && (
           <h2 className="Heading Heading--head text-center mb-8">
             {props.title}
           </h2>
-        )}
+        )} */}
 
         <CarouselProvider
           className="relative"
@@ -95,6 +96,7 @@ const Gallery = (props: GalleryProps) => {
           )}
         </CarouselProvider>
       </div>
+      <hr className="border-t-2 border-black my-4" />
     </div>
   );
 };

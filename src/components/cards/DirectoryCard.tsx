@@ -13,14 +13,14 @@ const DirectoryCard: CardComponent<
 
   return (
     <div className="Directorycard bg-white px-6 py-8 border h-full">
-      <h3 className=" text-lg font-medium">
+      <div className="directory-name">
         <MaybeLink
-          className="Link Link--primary hover:underline"
+          className="Link directorycard-name  hover:underline hover:text-pb-red-500"
           href={profile.slug ? relativePrefixToRoot + profile.slug : ""}
         >
           {profile.name}
         </MaybeLink>
-      </h3>
+      </div>
 
       {profile.address && (
         <div className="text-sm">

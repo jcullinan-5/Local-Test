@@ -34,12 +34,12 @@ const Footer = (props: FooterProps) => {
   return (
     <footer id="footer" className="relative bg-white z-40">
       <div className="footer-navigation bg-white">
-        <div className="container px-0 border-b border-red-500">
+        <div className="container px-0 border-b border-pb-red-500">
           <ul className="flex flex-wrap p-0 m-0">
             <li className="w-1/2 lg:w-1/4 text-center">
               <a
                 href="https://primantibros.com/our-story"
-                className="block p-3 sm:p-6 hover:text-white hover:bg-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
+                className="block p-3 sm:p-6 hover:text-white hover:bg-pb-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
               >
                 Our Story
                 <svg
@@ -54,7 +54,7 @@ const Footer = (props: FooterProps) => {
             <li className="w-1/2 lg:w-1/4 text-center">
               <a
                 href="https://primantibros.cardfoundry.com"
-                className="block p-3 sm:p-6 hover:text-white hover:bg-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
+                className="block p-3 sm:p-6 hover:text-white hover:bg-pb-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
               >
                 Gift Cards
                 <svg
@@ -69,7 +69,7 @@ const Footer = (props: FooterProps) => {
             <li className="w-1/2 lg:w-1/4 text-center">
               <a
                 href="https://recruiting.ultipro.com/PRI1017PRIMA"
-                className="block p-3 sm:p-6 hover:text-white hover:bg-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
+                className="block p-3 sm:p-6 hover:text-white hover:bg-pb-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
                 target="_blank"
                 rel="noopener"
                 aria-label="careers"
@@ -88,7 +88,7 @@ const Footer = (props: FooterProps) => {
             <li className="w-1/2 lg:w-1/4 text-center">
               <a
                 href="https://primantibros.myguestaccount.com/guest/"
-                className="block p-3 sm:p-6 hover:text-white hover:bg-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
+                className="block p-3 sm:p-6 hover:text-white hover:bg-pb-red-500 font-medium text-base text-black sm:text-lg md:text-2xl xl:text-3xl px-2 uppercase"
                 target="_blank"
                 rel="noopener"
                 aria-label="loyalty"
@@ -121,7 +121,6 @@ const Footer = (props: FooterProps) => {
                 <a
                   href="https://primantibros.com/"
                   className="block mb-4"
-                  alt="Primanti Bros Footer"
                   aria-label="primanti bros"
                 >
                   <img

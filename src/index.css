@@ -4,8 +4,10 @@
 @import "src/styles/theme.css";
 @import "src/components/common/header.css";
 @import "src/components/entity/hero.css";
+@import "src/assets/Fonts/font-awesome.min.css";
 @import "src/components/entity/about.css";
-@import "src/components/common/breadcrumbs.css";
+@import "src/components/cards/DirectoryCard.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,5 +24,5 @@ https://github.com/yext/pages/issues/211 is resolved */
   display: grid;
   height: 100%;
   grid-template-rows: auto 1fr auto;
-  font-family: theme(fontFamily.primary);
+  font-family: "Uniform", sans-serif;
 }

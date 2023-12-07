@@ -1,13 +1,65 @@
-/*
-  Use this file to create custom CSS properties, or override the default values
-  provided by imported components.
-*/
-html {
-  font-family: Uniform;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 1640px;
 }
 
-h2 {
-  margin-bottom: 1rem;
+@media (min-width: 1141px) {
+  .container {
+    max-width: 1141px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+a {
+  --tw-text-opacity: 1;
+  color: rgba(172, 23, 44, var(--tw-text-opacity));
+  text-decoration: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+section {
+  width: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 html,
 body,
@@ -96,6 +148,7 @@ video {
   /* color: #333; */
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -112,165 +165,61 @@ h6 {
   font-weight: 500;
   line-height: 1;
 }
+.h1,
+h1 {
+  font-size: 2.25rem !important;
+}
+@media (min-width: 1141px) {
+  .h1,
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .h1,
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 640px) {
+  .h1,
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.btn {
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #ac172c;
+  border-color: rgba(172, 23, 44, var(--border-opacity));
+  --bg-opacity: 1;
+  background-color: #ac172c;
+  background-color: rgba(172, 23, 44, var(--bg-opacity));
+  border-radius: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  display: inline-block;
+  font-weight: 500;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  text-align: center;
+}
 
 h2 {
   font-size: 1.875rem !important;
 }
 
-@media (min-width: 1141px) {
-  .h2,
-  h2 {
-    font-size: 3rem !important;
-  }
-}
-@media (min-width: 768px) {
-  .h2,
-  h2 {
-    font-size: 2.25rem !important;
-  }
-}
-@media (min-width: 640px) {
-  .h2,
-  h2 {
-    font-size: 1.875rem !important;
-  }
-}
-
-.nav-icon {
-  position: relative;
-  cursor: pointer;
-  width: 35px;
-  height: 25px;
-  transform: rotate(0);
-}
-
-.nav-icon span {
-  position: absolute;
-  left: 0;
-  display: block;
-  width: 100%;
-  --bg-opacity: 1;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, var(--bg-opacity));
-  opacity: 1;
-  height: 5px;
-  border-radius: 0;
-  transform: rotate(0);
-  transition: 0.25s ease-in-out;
-}
-
-.nav-icon span:nth-child(1) {
-  top: 0;
-}
-.nav-icon span:nth-child(2),
-.nav-icon span:nth-child(3) {
-  top: 10px;
-}
-
-.nav-icon span:nth-child(4) {
-  top: 20px;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  max-width: 1640px;
-}
-
-@media (min-width: 1141px) {
-  .container {
-    max-width: 1141px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-.container {
-  width: 100%;
-}
-
-.bg-custom {
-  background-color: #f6f8fa;
-}
-
-a {
-  text-decoration: none;
-  --text-opacity: 1;
-  color: #ac172c;
-  color: rgba(172, 23, 44, var(--text-opacity));
-}
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a {
-  background-color: transparent;
-}
-
-.order-now--header {
-  background-color: #ac172c;
-}
-.order-now--header:hover {
-  background-color: #670e1a; /* Equivalent to hover:bg-red-700 */
-}
-.header--text:hover {
-  color: #ac172c !important;
-}
-
-p {
-  font-size: 1rem;
-  margin: 0;
-  line-height: 1.625;
-  font-family: Uniform, sans-serif;
-}
-main {
-  padding: 40px 30px;
-}
-main {
-  display: block;
-}
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
-  border-color: #e2e8f0;
-}
-user agent stylesheet main {
-  display: block;
-}
-
-.social--logo {
-  color: #ac172c;
-  --text-opacity: 1;
-}
-
-.directory--list {
-  text-decoration: none;
-  --text-opacity: 1;
-  color: #ac172c !important;
-}
-
-.directory--list:hover {
-  color: rgb(127 29 29);
+h2 {
+  margin-bottom: 1rem !important;
 }

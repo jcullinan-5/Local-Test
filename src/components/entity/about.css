@@ -2,12 +2,18 @@
 .menu {
   padding: 30px;
 }
-
-.about p {
+.about-description {
   max-width: 540px;
 }
-
 p {
   padding: 1em;
   clear: both;
+}
+
+section:after,
+.hours_wrapper:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
 }

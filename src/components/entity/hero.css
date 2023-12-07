@@ -1,28 +1,70 @@
+.nap {
+  font-family: Uniform, sans-serif;
+}
+
 section.nap > div {
   min-height: 530px;
 }
+@media (max-width: 767px) {
+  section.nap > div {
+    min-height: 0;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-50 {
+    width: 100%;
+  }
+}
+
 .addressBlock {
-  /* background-image: url(/primantibros/images2/local/strip.jpg); */
-  background-image: url(https://hosted.where2getit.com/primantibros/images/restaurant_exterior/BG_Primanti_SouthSide_38003.jpg);
-  background-repeat: no-repeat;
+  position: relative;
   background-size: cover;
   display: inline-block;
   padding: 15px 30px;
-  position: relative;
-  z-index: 5;
+  /* Your other styles */
 }
 
+.addressBlock.with-overlay::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: 1; /* Make sure the overlay is behind the content */
+}
 .col-50 {
   float: left;
   width: 50%;
 }
 @media (max-width: 767px) {
+  section.nap > div {
+    min-height: 0;
+    padding: 30px;
+  }
+}
+
+section.nap > div {
+  min-height: 530px;
+}
+@media (max-width: 767px) {
   .col-50 {
-    width: 100% !important;
+    width: 100%;
   }
 }
 .addressBlock {
   padding: 15px;
+}
+
+.addressBlock_inner h1 {
+  color: #fff;
+  margin: 25px 0 0;
+  position: relative;
 }
 
 .addressBlock_inner {
@@ -30,39 +72,13 @@ section.nap > div {
   position: relative;
   text-align: right;
   z-index: 7;
+  padding: 15px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 1rem;
-  --text-opacity: 1;
-  color: rgba(0, 0, 0, var(--text-opacity));
-  font-family: "Alternate Gothic Std No 1", sans-serif;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.adressBlock_header {
-  color: #fff;
-  margin: 25px 0 0;
-  position: relative;
-}
-
-h1 {
-  font-size: 2.25rem !important;
-}
-
-.addressBlock_headerafter {
+.hero--after {
   border-bottom: 2px solid #fff;
   border-radius: 0;
   bottom: -10px;
-  content: "";
   display: block;
   height: 5px;
   position: absolute;
@@ -70,76 +86,117 @@ h1 {
   width: 50%;
 }
 
-.address {
+.addressBlock .address {
   margin: 25px 0 5px;
 }
-.addressBlock_inner h2 {
+
+.address--header {
   color: #fff;
   font-size: 1.25rem;
   margin-bottom: 0;
 }
-.addressBlock .address > div {
+
+/* .with-overlay {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+} */
+
+.address--address {
   line-height: 1.2;
   margin-top: 10px;
 }
+
 .addressBlock .phone {
   margin: 0 0 10px;
 }
-.addressBlock .phone a {
+.phone--number {
   color: #fff;
   text-decoration: underline;
+  z-index: 10;
+}
+
+.addressBlock_inner {
+  z-index: 8;
 }
 
 .addressBlock .btn {
   margin-top: 15px;
-}
-.btn {
-  border-width: 2px;
-  --border-opacity: 1;
-  border-color: #ac172c;
-  border-color: rgba(172, 23, 44, var(--border-opacity));
-  --bg-opacity: 1;
-  background-color: #ac172c;
-  background-color: rgba(172, 23, 44, var(--bg-opacity));
-  border-radius: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
-  display: inline-block;
-  font-weight: 500;
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform;
-  text-align: center;
+  font-weight: bold;
 }
 
-.btn:hover {
-  background-color: black;
-}
-.hours_cta {
-  padding: 15px 30px;
-}
-
-.col-50 {
-  float: left;
-  width: 50%;
-}
-
-.hours_wrapper,
+.hours-wrapper,
 .cta_wrapper {
   margin: 20px 0 0;
 }
 
-.regular_hours,
-.holiday_hours {
-  float: left;
+.hours_cta {
+  padding: 30px 30px;
 }
 
-.regular_hours_header {
-  margin-bottom: 1rem;
+.regular-hours,
+.holiday-hours {
+  float: left;
+}
+.holiday-hours {
+  margin-left: 80px;
+}
+@media (max-width: 440px) {
+  .holiday-hours {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .regular-hours,
+  .holiday-hours {
+    clear: both;
+    float: none;
+  }
+}
+@media (max-width: 536px) {
+  .holiday-hours {
+    clear: both;
+    float: none;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.cta_wrapper {
+  clear: both;
+  max-width: 365px;
+}
+.buttonContainerWrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.cta_wrapper a:nth-of-type(odd) {
+  margin-right: 15px;
+}
+@media (min-width: 801px) {
+  .cta_wrapper a:nth-of-type(3),
+  .cta_wrapper a:nth-of-type(4),
+  .cta_wrapper a:nth-of-type(5) {
+    margin-top: 20px;
+  }
+}
+
+.cta_wrapper a {
+  margin: 0 15px 0 0;
+  width: 161px;
+}
+
+.h2-hours {
   color: rgba(0, 0, 0, var(--text-opacity));
   font-family: "Alternate Gothic Std No 1", sans-serif;
   font-weight: 500;
@@ -147,53 +204,11 @@ h1 {
   font-size: 1.875rem;
 }
 
-.holiday_hours {
-  margin-left: 80px;
-  float: left;
-}
-@media (max-width: 536px) {
-  .holiday_hours {
-    clear: both;
-    float: none;
-    margin-left: 0 !important;
-    margin-top: 20px;
-  }
-}
-
-.happy_hours h2 span.fa.fa-beer {
+.holiday-hours h2 span.fa.fa-beer {
   color: #ac172c;
   font-size: 24px;
   margin-left: 0;
-}
-
-.cta_wrapper {
-  clear: both;
-  max-width: 365px;
-  padding-top: 20px;
-}
-.hours_wrapper,
-.cta_wrapper {
-  margin: 20px 0 0;
-}
-.buttonContainerWrapper {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.cta_wrapper a:nth-of-type(odd) {
-  margin-right: 15px;
-}
-.cta_wrapper a {
-  margin: 0 15px 0 0;
-  width: 161px;
-}
-
-@media (min-width: 801px) {
-  .cta_wrapper a:nth-of-type(3),
-  .cta_wrapper a:nth-of-type(4) {
-    margin-top: 20px;
-  }
+  margin-right: 5px;
 }
 
 @media (max-width: 800px) {

@@ -1,3 +1,45 @@
+.bg-custom {
+  background-color: #f6f8fa;
+}
+
+.header--background {
+  background-image: url("https://primantibros.com/imager/7bc0ee636b3b83484fc3b9348863bd22/889/footer-graphics_b6f041e4b65b252570391fe38bdd9552.png");
+}
+
+@media (min-width: 375px) {
+  .header--background {
+    background-image: url("https://primantibros.com/imager/7bc0ee636b3b83484fc3b9348863bd22/889/footer-graphics_f8d9489538e2d956a894753ce4cb873d.png");
+  }
+}
+
+@media (min-width: 640px) {
+  .header--background {
+    background-image: url("https://primantibros.com/imager/7bc0ee636b3b83484fc3b9348863bd22/889/footer-graphics_64344cd0d8169e037089aab94ecf07fe.png");
+  }
+}
+
+@media (min-width: 1280px) {
+  .header--background {
+    background-image: url("https://primantibros.com/imager/7bc0ee636b3b83484fc3b9348863bd22/889/footer-graphics_3cd6bbe8fadf32b854b08a6606779a4f.png");
+  }
+}
+
+@media (min-width: 1920px) {
+  .header--background {
+    background-image: url("https://primantibros.com/imager/7bc0ee636b3b83484fc3b9348863bd22/889/footer-graphics_0c960240cf755edd486e2457262a1ec5.png");
+  }
+}
+
+@media (min-width: 1920px) {
+  .header--background {
+    background-image: url("https://primantibros.com/imager/7bc0ee636b3b83484fc3b9348863bd22/889/footer-graphics_4c03d4bc09f568b22a53372ae912d1cd.png");
+  }
+}
+
+.header--menutext {
+  color: black;
+}
+
 .nav-icon .open {
 }
 .nav-icon.open span.nav-4,
@@ -47,8 +89,47 @@
 .nav-drawer-open {
   height: 100;
   transform: translateX(0%);
+  z-index: 1000;
 }
 
 .text-2xs {
   font-size: 0.625rem;
+}
+.nav-icon {
+  position: relative;
+  cursor: pointer;
+  width: 35px;
+  height: 25px;
+  transform: rotate(0);
+}
+
+.nav-icon span {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  --bg-opacity: 1;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, var(--bg-opacity));
+  opacity: 1;
+  height: 5px;
+  border-radius: 0;
+  transform: rotate(0);
+  transition: 0.25s ease-in-out;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0;
+}
+.nav-icon span:nth-child(2),
+.nav-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.nav-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.heading {
+  z-index: 1000;
 }

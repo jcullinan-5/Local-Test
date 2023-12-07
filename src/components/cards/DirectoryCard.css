@@ -1,0 +1,9 @@
+.directorycard-name {
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.main {
+  padding: 40px 30px;
+  display: block;
+}

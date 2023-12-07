@@ -1,10 +1,21 @@
-.bullet {
-  content: "\A";
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: black;
-  margin: 0 theme(spacing.3);
-  vertical-align: middle;
+html {
+  --yxt-hoursTable-col2-width: auto;
+}
+
+abbr:where([title]) {
+  text-decoration: none;
+}
+
+.HoursStatus-current {
+  font-weight: theme("fontWeight.bold");
+}
+
+.HoursTable {
+  &-row {
+    margin-bottom: 4px;
+  }
+
+  &-row.is-today {
+    font-weight: theme(fontWeight.bold);
+  }
 }

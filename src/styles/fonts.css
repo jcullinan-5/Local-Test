@@ -17,22 +17,242 @@ For example:
 
 @font-face {
   font-family: "Uniform";
-  src: url("/src/assets/fonts/Uniform.ttf") format("truetype");
+  src: url("src/assets/Fonts/Uniform-Black.woff2") format("woff2"),
+    url("src/assets/Fonts/Uniform-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform";
+  src: url("src/assets/Fonts/Uniform.woff2") format("woff2"),
+    url("src/assets/Fonts/Uniform.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
-element.style {
-  left: -381px;
+@font-face {
+  font-family: "Uniform";
+  src: url("src/assets/Fonts/Uniform-Medium.woff") format("woff2"),
+    url("src/assets/Fonts/Uniform-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-.transition {
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform;
+@font-face {
+  font-family: "Uniform";
+  src: url("src/assets/Fonts/Uniform-Bold.woff2") format("woff2"),
+    url("src/assets/Fonts/Uniform-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-.relative {
-  position: relative;
+@font-face {
+  font-family: "Uniform";
+  src: url("Uniform-Light.woff2") format("woff2"),
+    url("Uniform-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
-.left-0 {
-  left: 0;
+@font-face {
+  font-family: "Uniform";
+  src: url("src/assets/Fonts/Uniform-Ultra.woff2") format("woff2"),
+    url("src/assets/Fonts/Uniform-Ultra.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Condensed";
+  src: url("src/assets/Fonts/UniformCondensed-Ultra.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformCondensed-Ultra.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alternate Gothic Std No 1";
+  src: url("src/assets/Fonts/AlternateGothicStd-No1.woff2") format("woff2"),
+    url("src/assets/Fonts/AlternateGothicStd-No1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Extra Condensed";
+  src: url("src/assets/Fonts/UniformExtraCondensed.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformExtraCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Sans Reg";
+  src: url("src/assets/Fonts/DallasPS-SansBld.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-SansBld.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Pen";
+  src: url("src/assets/Fonts/DallasPS-Pen.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-Pen.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Condensed";
+  src: url("src/assets/Fonts/UniformCondensed-Medium.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Serif Inl";
+  src: url("src/assets/Fonts/DallasPS-SerifInl.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-SerifInl.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Condensed";
+  src: url("src/assets/Fonts/UniformCondensed-Black.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformCondensed-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Extra Condensed";
+  src: url("src/assets/Fonts/UniformExtraCondensed-Light.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformExtraCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Asmara";
+  src: url("src/assets/Fonts/Asmara.woff2") format("woff2"),
+    url("src/assets/Fonts/Asmara.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Condensed";
+  src: url("src/assets/Fonts/UniformCondensed.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Condensed";
+  src: url("src/assets/Fonts/UniformCondensed-Bold.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Script";
+  src: url("src/assets/Fonts/DallasPS-Script.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-Script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Brush";
+  src: url("src/assets/Fonts/DallasPS-Brush.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-Brush.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alternate Gothic Std No 3";
+  src: url("src/assets/Fonts/AlternateGothicStd-No3.woff2") format("woff2"),
+    url("src/assets/Fonts/AlternateGothicStd-No3.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Extra Condensed";
+  src: url("src/assets/Fonts/UniformExtraCondensed-Black.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformExtraCondensed-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Extra Condensed";
+  src: url("src/assets/Fonts/UniformExtraCondensed.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformExtraCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Serif Bld";
+  src: url("src/assets/Fonts/DallasPS-SerifBld.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-SerifBld.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Sans Bld";
+  src: url("src/assets/Fonts/DallasPS-SansBld.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-SansBld.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Extra Condensed";
+  src: url("src/assets/Fonts/UniformExtraCondensed-Medium.woff2")
+      format("woff2"),
+    url("src/assets/Fonts/UniformExtraCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alternate Gothic Std No 2";
+  src: url("src/assets/Fonts/AlternateGothicStd-No2.woff2") format("woff2"),
+    url("src/assets/Fonts/AlternateGothicStd-No2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Extra Condensed";
+  src: url("src/assets/Fonts/UniformExtraCondensed-Bold.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformExtraCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dallas PS Serif Reg";
+  src: url("src/assets/Fonts/DallasPS-SerifReg.woff2") format("woff2"),
+    url("src/assets/Fonts/DallasPS-SerifReg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Uniform Condensed";
+  src: url("src/assets/Fonts/UniformCondensed-Light.woff2") format("woff2"),
+    url("src/assets/Fonts/UniformCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }

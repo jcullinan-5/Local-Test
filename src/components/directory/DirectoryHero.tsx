@@ -14,12 +14,12 @@ const DirectoryHero = (props: DirectoryHeroProps) => {
     document?._site?.c_searchPage?.slug || FALLBACK_SEARCH_PATH;
 
   return (
-    <div className="pt-8 md:pt-20 pt-4 md:px-0">
+    <div className="main ">
       <h1 className="mb-6">
         {/* {brand && <div className="Heading Heading--sub mb-6">{brand}</div>} */}
         <div className="Heading Heading--head">
           {title && title !== "Select a State" && (
-            <span>Primanti Bros. Restaurant Locations in {title}</span>
+            <h1>Primanti Bros. Restaurant Locations in {title}</h1>
           )}
           {title === "Select a State" && (
             <span>Primanti Bros. Restaurant Locations</span>

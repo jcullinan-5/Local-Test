@@ -140,6 +140,7 @@ export const configBuilder: (
       // "c_teamSection.team.c_occupation",
       // "c_teamSection.team.emails",
       // "c_teamSection.team.websiteUrl",
+      "happyHours",
     ]),
     // Defines the scope of entities that qualify for this stream.
     filter: filter || {
@@ -231,6 +232,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
     address,
     description,
     hours,
+    happyHours,
     photoGallery,
     c_bannerSection: banner,
     c_heroSection: hero,
@@ -264,14 +266,14 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           <Banner text={banner.text} image={banner.image} />
         </ErrorBoundaryWithAnalytics>
       )} */}
-      <ErrorBoundaryWithAnalytics name="breadcrumbs">
+      {/* <ErrorBoundaryWithAnalytics name="breadcrumbs">
         <Breadcrumbs
           breadcrumbs={directoryParents || []}
           separator=">"
           className="container"
           addAnalytics={true}
         />
-      </ErrorBoundaryWithAnalytics>
+      </ErrorBoundaryWithAnalytics> */}
       <ErrorBoundaryWithAnalytics name="hero">
         <Hero
           name={name}
@@ -280,8 +282,8 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           address={address}
           background={hero?.background}
           hours={hours}
-          numReviews={21}
-          rating={4.5}
+          happyHours={happyHours}
+          entityId={id}
           profile={data.document}
         />
       </ErrorBoundaryWithAnalytics>
@@ -314,11 +316,6 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
       )}
 
       <LazyLoadWrapper>
-        <ErrorBoundaryWithAnalytics name="reviews">
-          <Reviews title={reviews?.title} name={name} entityId={id} />
-        </ErrorBoundaryWithAnalytics>
-      </LazyLoadWrapper>
-      {/* <LazyLoadWrapper>
         <ErrorBoundaryWithAnalytics name="nearby">
           <Nearby
             title={nearby?.title}
@@ -329,7 +326,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
             id={id}
           />
         </ErrorBoundaryWithAnalytics>
-      </LazyLoadWrapper> */}
+      </LazyLoadWrapper>
     </>
   );
 };

@@ -28,7 +28,7 @@ const Breadcrumbs = (props: BreadcrumbsPropsDefault) => {
   const { relativePrefixToRoot } = useTemplateData();
 
   return (
-    <>
+    <div style={{ paddingLeft: "20px" }}>
       {breadcrumbs?.length && (
         <nav
           className={classNames("Breadcrumbs", className)}
@@ -57,7 +57,7 @@ const Breadcrumbs = (props: BreadcrumbsPropsDefault) => {
           </ol>
         </nav>
       )}
-    </>
+    </div>
   );
 };
 
